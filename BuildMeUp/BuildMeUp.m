@@ -22,7 +22,16 @@
 
 	// generate some info to append to it
 	NSTimeInterval buildTime = [[NSUserDefaults standardUserDefaults] bmu_buildTime];
-	NSString *timing = [NSString stringWithFormat:@" [%.2f secs]", buildTime];
+	NSString *formattedBuildTime = nil;
+	if ([[NSUserDefaults standardUserDefaults] bmu_displayInSeconds]) {
+		formattedBuildTime = [NSString stringWithFormat:@"%.2f secs", buildTime];
+	}
+	else {
+		NSDateComponentsFormatter *formatter = [[NSDateComponentsFormatter alloc] init];
+		formatter.unitsStyle = NSDateComponentsFormatterUnitsStyleAbbreviated;
+		formattedBuildTime = [formatter stringFromTimeInterval:buildTime];
+	}
+	NSString *timing = [NSString stringWithFormat:@" [%@]", formattedBuildTime];
 
 	// append and return
 	NSMutableAttributedString *modified = [original mutableCopy];

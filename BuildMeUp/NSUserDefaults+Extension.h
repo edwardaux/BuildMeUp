@@ -10,6 +10,7 @@
 
 @interface NSUserDefaults (Extension)
 
+-(BOOL)bmu_displayInSeconds;
 -(NSTimeInterval)bmu_buildTime;
 -(void)bmu_setBuildTime:(NSTimeInterval)time;
 

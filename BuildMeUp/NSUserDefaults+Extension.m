@@ -11,11 +11,17 @@
 
 @implementation NSUserDefaults (Extension)
 
+-(BOOL)bmu_displayInSeconds {
+	NSString *key = [self keyForField:@"displayInSeconds"];
+	return [self boolForKey:key];
+}
 -(NSTimeInterval)bmu_buildTime {
-	return [self bmu_timeForField:@"build"];
+	NSString *key = [self keyForField:@"build"];
+	return [self doubleForKey:key];
 }
 -(void)bmu_setBuildTime:(NSTimeInterval)time {
-	[self bmu_setTime:time forField:@"build"];
+	NSString *key = [self keyForField:@"build"];
+	[self setValue:@(time) forKey:key];
 }
 
 #
@@ -33,18 +39,9 @@
 	return [workspace valueForKey:@"name"];
 }
 
-/** Returns a time value for a specific field name */
--(NSTimeInterval)bmu_timeForField:(NSString *)fieldName {
+-(NSString *)keyForField:(NSString *)fieldName {
 	NSString *projectName = [self projectName];
-	NSString *key = [NSString stringWithFormat:@"BuildMeUp_%@_%@", projectName, fieldName];
-	return [self doubleForKey:key];
-}
-
-/** Stores a time value for a specific field name */
--(void)bmu_setTime:(NSTimeInterval)time forField:(NSString *)fieldName {
-	NSString *projectName = [self projectName];
-	NSString *key = [NSString stringWithFormat:@"BuildMeUp_%@_%@", projectName, fieldName];
-	[self setValue:@(time) forKey:key];
+	return [NSString stringWithFormat:@"BuildMeUp_%@_%@", projectName, fieldName];
 }
 
 @end
