@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF5300A21CC61B760019B30E /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = BF5300A11CC61B760019B30E /* readme.md */; };
+		BFC6C2FA1CC5ED8C00FA2490 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC6C2F91CC5ED8C00FA2490 /* AppKit.framework */; };
+		BFC6C2FC1CC5ED8C00FA2490 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC6C2FB1CC5ED8C00FA2490 /* Foundation.framework */; };
+		BFC6C3001CC5ED8C00FA2490 /* BuildMeUp.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = BFC6C2FF1CC5ED8C00FA2490 /* BuildMeUp.xcscheme */; };
+		BFC6C3031CC5ED8C00FA2490 /* BuildMeUp.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6C3021CC5ED8C00FA2490 /* BuildMeUp.m */; };
+		BFC6C3061CC5ED8C00FA2490 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6C3051CC5ED8C00FA2490 /* NSObject_Extension.m */; };
+		BFC6C30F1CC5F38F00FA2490 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6C30E1CC5F38F00FA2490 /* JRSwizzle.m */; };
+		BFC6C3151CC6146A00FA2490 /* NSUserDefaults+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6C3141CC6146A00FA2490 /* NSUserDefaults+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF5300A11CC61B760019B30E /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		BF5300A31CC61B940019B30E /* license.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = license.md; sourceTree = "<group>"; };
+		BF5300A41CC61C340019B30E /* JRSwizzle_license.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = JRSwizzle_license.md; sourceTree = "<group>"; };
+		BF5300A71CC61CED0019B30E /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		BFC6C2F61CC5ED8C00FA2490 /* BuildMeUp.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuildMeUp.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC6C2F91CC5ED8C00FA2490 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		BFC6C2FB1CC5ED8C00FA2490 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		BFC6C2FF1CC5ED8C00FA2490 /* BuildMeUp.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = BuildMeUp.xcscheme; path = BuildMeUp.xcodeproj/xcshareddata/xcschemes/BuildMeUp.xcscheme; sourceTree = SOURCE_ROOT; };
+		BFC6C3011CC5ED8C00FA2490 /* BuildMeUp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildMeUp.h; sourceTree = "<group>"; };
+		BFC6C3021CC5ED8C00FA2490 /* BuildMeUp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuildMeUp.m; sourceTree = "<group>"; };
+		BFC6C3041CC5ED8C00FA2490 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		BFC6C3051CC5ED8C00FA2490 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		BFC6C3071CC5ED8C00FA2490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC6C30D1CC5F38F00FA2490 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		BFC6C30E1CC5F38F00FA2490 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		BFC6C3131CC6146A00FA2490 /* NSUserDefaults+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Extension.h"; sourceTree = "<group>"; };
+		BFC6C3141CC6146A00FA2490 /* NSUserDefaults+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Extension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC6C2F41CC5ED8C00FA2490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC6C2FA1CC5ED8C00FA2490 /* AppKit.framework in Frameworks */,
+				BFC6C2FC1CC5ED8C00FA2490 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFC6C2ED1CC5ED8C00FA2490 = {
+			isa = PBXGroup;
+			children = (
+				BF5300A11CC61B760019B30E /* readme.md */,
+				BF5300A31CC61B940019B30E /* license.md */,
+				BF5300A71CC61CED0019B30E /* screenshot.png */,
+				BFC6C2FD1CC5ED8C00FA2490 /* BuildMeUp */,
+				BFC6C2F81CC5ED8C00FA2490 /* Frameworks */,
+				BFC6C2F71CC5ED8C00FA2490 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC6C2F71CC5ED8C00FA2490 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6C2F61CC5ED8C00FA2490 /* BuildMeUp.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC6C2F81CC5ED8C00FA2490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6C2F91CC5ED8C00FA2490 /* AppKit.framework */,
+				BFC6C2FB1CC5ED8C00FA2490 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFC6C2FD1CC5ED8C00FA2490 /* BuildMeUp */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6C30D1CC5F38F00FA2490 /* JRSwizzle.h */,
+				BFC6C30E1CC5F38F00FA2490 /* JRSwizzle.m */,
+				BF5300A41CC61C340019B30E /* JRSwizzle_license.md */,
+				BFC6C3011CC5ED8C00FA2490 /* BuildMeUp.h */,
+				BFC6C3021CC5ED8C00FA2490 /* BuildMeUp.m */,
+				BFC6C3131CC6146A00FA2490 /* NSUserDefaults+Extension.h */,
+				BFC6C3141CC6146A00FA2490 /* NSUserDefaults+Extension.m */,
+				BFC6C3041CC5ED8C00FA2490 /* NSObject_Extension.h */,
+				BFC6C3051CC5ED8C00FA2490 /* NSObject_Extension.m */,
+				BFC6C3071CC5ED8C00FA2490 /* Info.plist */,
+				BFC6C2FE1CC5ED8C00FA2490 /* Supporting Files */,
+			);
+			path = BuildMeUp;
+			sourceTree = "<group>";
+		};
+		BFC6C2FE1CC5ED8C00FA2490 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6C2FF1CC5ED8C00FA2490 /* BuildMeUp.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC6C2F51CC5ED8C00FA2490 /* BuildMeUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC6C30A1CC5ED8C00FA2490 /* Build configuration list for PBXNativeTarget "BuildMeUp" */;
+			buildPhases = (
+				BFC6C2F21CC5ED8C00FA2490 /* Sources */,
+				BFC6C2F31CC5ED8C00FA2490 /* Resources */,
+				BFC6C2F41CC5ED8C00FA2490 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuildMeUp;
+			productName = BuildMeUp;
+			productReference = BFC6C2F61CC5ED8C00FA2490 /* BuildMeUp.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC6C2EE1CC5ED8C00FA2490 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "BlackDog Foundry Pty Ltd";
+				TargetAttributes = {
+					BFC6C2F51CC5ED8C00FA2490 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BFC6C2F11CC5ED8C00FA2490 /* Build configuration list for PBXProject "BuildMeUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFC6C2ED1CC5ED8C00FA2490;
+			productRefGroup = BFC6C2F71CC5ED8C00FA2490 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC6C2F51CC5ED8C00FA2490 /* BuildMeUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC6C2F31CC5ED8C00FA2490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC6C3001CC5ED8C00FA2490 /* BuildMeUp.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC6C2F21CC5ED8C00FA2490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC6C3031CC5ED8C00FA2490 /* BuildMeUp.m in Sources */,
+				BFC6C3151CC6146A00FA2490 /* NSUserDefaults+Extension.m in Sources */,
+				BFC6C30F1CC5F38F00FA2490 /* JRSwizzle.m in Sources */,
+				BF5300A21CC61B760019B30E /* readme.md in Sources */,
+				BFC6C3061CC5ED8C00FA2490 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BFC6C3081CC5ED8C00FA2490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		BFC6C3091CC5ED8C00FA2490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		BFC6C30B1CC5ED8C00FA2490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = BuildMeUp/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.BuildMeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		BFC6C30C1CC5ED8C00FA2490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = BuildMeUp/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackdogfoundry.BuildMeUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC6C2F11CC5ED8C00FA2490 /* Build configuration list for PBXProject "BuildMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC6C3081CC5ED8C00FA2490 /* Debug */,
+				BFC6C3091CC5ED8C00FA2490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC6C30A1CC5ED8C00FA2490 /* Build configuration list for PBXNativeTarget "BuildMeUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC6C30B1CC5ED8C00FA2490 /* Debug */,
+				BFC6C30C1CC5ED8C00FA2490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC6C2EE1CC5ED8C00FA2490 /* Project object */;
+}
