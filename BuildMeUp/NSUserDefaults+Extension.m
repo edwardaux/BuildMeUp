@@ -17,7 +17,12 @@
 }
 -(NSTimeInterval)bmu_buildTime {
 	NSString *key = [self keyForField:@"build"];
-	return [self doubleForKey:key];
+	NSTimeInterval buildTime = [self doubleForKey:key];
+	// be a bit more resilient in case we've got dodgy data
+	if isnan(buildTime) {
+		buildTime = 0.0;
+	}
+	return buildTime;
 }
 -(void)bmu_setBuildTime:(NSTimeInterval)time {
 	NSString *key = [self keyForField:@"build"];
